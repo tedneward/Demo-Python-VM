@@ -30,7 +30,7 @@ print(iron)
 # {{## END slots ##}}
 
 # {{## BEGIN no-extending-slots ##}}
-# iron.atomic_mass = 55.845 # AttributeError!
+#iron.atomic_mass = 55.845 # AttributeError!
 # {{## END no-extending-slots ##}}
 
 # {{## BEGIN extending-with-slots ##}}
