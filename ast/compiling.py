@@ -21,6 +21,19 @@ print(comp_result)
 exec(comp_result)
 # {{## END run-compile ##}}
 
-# {{## BEGIN exec ##}}
+# {{## BEGIN exec-source ##}}
+morecode = """
+print(1 + 1)
+1 + 1
+"""
+result = exec(morecode)
+print(result)               # "None"
+# {{## END exec-source ##}}
 
-# {{## END exec ##}}
+# {{## BEGIN eval-source ##}}
+morecode = """
+1 + 1
+"""
+result = eval(morecode)
+print(result)               # "2"
+# {{## END eval-source ##}}
